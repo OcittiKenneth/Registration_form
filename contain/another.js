@@ -15,7 +15,7 @@ function myFunction(e) {
     } else {
         document.getElementById('span1').innerHTML = "";
         userId.style.border = '1px solid green';
-    }
+    };
 
     // password restriction
     const passwordInput = document.getElementById('passwordId');
@@ -23,11 +23,10 @@ function myFunction(e) {
     if (passwordInput.value.length < 7 || passwordInput.value.length >= 13) {
         document.getElementById('span2').innerHTML = 'Required and must be of leenth 7 to 12';
         passwordInput.style.border = '1px solid red';
-
     } else {
         document.getElementById('span2').innerHTML = "";
         passwordInput.style.border = '1px solid green';
-    }
+    };
 
     // name specification and restriction
     const nameInput = document.getElementById('nameId');
@@ -39,14 +38,14 @@ function myFunction(e) {
     } else {
         document.getElementById('span3').innerHTML = "";
         nameInput.style.border = '1px solid green';
-    }
+    };
 
     // address specifications and it's optional
     const adressInput = document.getElementById('addressid');
     const forAddress = /^[A-Za-z0-9\-_]?$/;
     if (!forAddress.test(adressInput.value)) {
         adressInput.style.border = '1px solid green';
-    }
+    };
 
     // select for countries
     const countryInput = document.getElementById('select');
@@ -96,12 +95,14 @@ function myFunction(e) {
     const nonEng = document.getElementById("nonEng");
     const eng = document.getElementById("eng");
 
+    // function checking if English is checked then non English should be false
     eng.addEventListener("change", () => {
         if (eng.checked == true) {
             nonEng.checked = false;
         }
     });
 
+    // function checking if non English is checked then English should be false
     nonEng.addEventListener("change", () => {
         if (nonEng.checked == true) {
             eng.checked = false;
@@ -113,5 +114,5 @@ function myFunction(e) {
         document.getElementById("lange").innerHTML = "";
     }
 
-    e.preventDefault();
+    e.preventDefault(); // preveting the default behaviour of the page
 };
