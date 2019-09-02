@@ -1,0 +1,64 @@
+  /* styling body */
+  
+  body {
+      background-color: #000000;
+  }
+  /* styling div to center the form    */
+  
+  #formElement {
+      margin: auto;
+      width: 50%;
+      height: 650px;
+      background-color: #F8F8FF;
+  }
+  /* styling .labels for all inputs */
+  
+  .labels {
+      float: left;
+      width: 26%;
+      text-align: right;
+      margin-right: 10px;
+  }
+  /* styling the first 2 shorter inputs */
+  
+  .inputs {
+      width: 20%;
+      padding: 1px;
+  }
+  /* styling the 3 longest inputs */
+  
+  .inputlong {
+      width: 38%;
+      padding: 1px;
+  }
+  /* styling zipcode input */
+  
+  .zipcode {
+      width: 22.5%;
+      padding: 1px;
+  }
+  /* styling submit button */
+  
+  button {
+      margin-left: 45%;
+      padding: 3px;
+      font-weight: bolder;
+      border: 1px 1px 2px 2px solid gray;
+  }
+  /* styling h2 for registration form */
+  
+  h2 {
+      margin-left: 17%;
+  }
+  /* styling country select bar */
+  
+  .country {
+      width: 26%;
+      padding: 1px;
+      background-color: white;
+  }
+  /* styling textarea */
+  
+  textarea {
+      width: 49%;
+  }
