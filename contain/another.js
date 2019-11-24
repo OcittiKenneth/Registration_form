@@ -1,6 +1,7 @@
 /*validation of all inputs with eventListener submit and taking a function 
 call myFunction*/
 
+//adding an event listener to the form
 document.querySelector("form").addEventListener("submit", myFunction);
 
 function myFunction(e) {
